@@ -14,7 +14,7 @@ let text = load("all.json");
 var back;
 
 var req = new XMLHttpRequest();
-req.open('GET', 'all.json');
+req.open('GET','all.json',false);
 
 req.onload = function() {
     if (req.status == 200) {
