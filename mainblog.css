@@ -1,7 +1,6 @@
 #head
 {
     color:red;
-    text-align:center;
 }
 .blog
 {
@@ -10,4 +9,10 @@
     background-image:url('back.jpg');
     background-repeat:no-repeat;
     background-size:100% 100%;
+}
+
+h1,h2,h3,h4,h5,h6,a
+{
+    text-align:center;
+    font-family:STKaiti,KaiTi,sans-serif,楷体;
 }
