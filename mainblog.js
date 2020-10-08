@@ -36,10 +36,11 @@ req.onerror = function() {
 // Make the request
 req.send();
 
-var len=1;
+var len=0;
 while(len<back.length)
 {
-    var wr="<div id=\"blog\"><a href=\""+back[len].id+\"<h2>"+back[len].title+"</h2></a></div>";
+    var wr="<div id=\"blog\"><a href=\"mp/"+back[len].id+\"><h2>"+back[len].title+"</h2></a></div>";
     document.write(wr);
+    len++;
 }
 
