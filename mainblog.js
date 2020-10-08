@@ -27,7 +27,7 @@ req.send();
 var len=0;
 while(len<back.length)
 {
-    var wr="<div id=\"blog\"><a href=\"mp/"+back[len].id+"\"><h2>"+back[len].title+"</h2></a></div>";
+    var wr="<div class=\"blog\"><a href=\"mp/"+back[len].id+"\"><h2>"+back[len].title+"</h2></a></div>";
     document.getElementById("body").innerHTML+=wr;
     //document.write(wr);
     len++;
