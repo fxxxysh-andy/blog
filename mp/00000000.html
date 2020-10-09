@@ -6,7 +6,7 @@
 <body>
     <div id="content">
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.1/remarkable.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 var back;
 
@@ -30,11 +30,11 @@ req.onerror = function() {
     console.log("Network Error");
 };
 
-var md=new ReMarkable();
+var md=new showdown.Converter();
 // Make the request
 req.send();
 console.log(back);
-document.getElementById("content").innerHTML+=md.render(back);
+document.getElementById("content").innerHTML+=md.makeHtml(back);
 </script>
 
 </body>
