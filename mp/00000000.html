@@ -4,6 +4,8 @@
 <!--<link href="https://andy20080529.github.io/blog/mainblog.css" rel="stylesheet" type="text/css">-->
 </head>
 <body>
+    <div id="content">
+</div>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" type="text/javascript" defer></script>
 <script type="text/javascript" defer>
 var back;
@@ -33,7 +35,6 @@ req.send();
 console.log(back);
 document.getElementById("content").innerHTML+=marked(back);
 </script>
-<div id="content">
-</div>
+
 </body>
 </html>
