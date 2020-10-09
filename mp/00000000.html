@@ -17,7 +17,6 @@ req.onload = function() {
       // do what you want, here, with the req.response
       // take a look at the object that gets returned, you may need
       // to call JSON.parse(), etc.
-      console.log('success', req.response);
       back=req.response;
     } else {
       console.log('error', req.statusText);
@@ -31,11 +30,9 @@ req.onerror = function() {
 
 // Make the request
 req.send();
-
-marked(back);
+document.getElementById("content").innerHTML+=marked(back);
 </script>
 <div id="content">
-
 </div>
 </body>
 </html>
