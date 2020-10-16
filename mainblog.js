@@ -5,7 +5,7 @@ req.open('GET','all.json',false);
 req.overrideMimeType("text/plain;charset=utf-8");//默认为utf-8
 
 req.onload = function() {
-    if (req.status == 200&&req.readyState) {
+    if (req.status == 200&&req.readyState==4) {
       // do what you want, here, with the req.response
       // take a look at the object that gets returned, you may need
       // to call JSON.parse(), etc.
