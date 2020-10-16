@@ -30,12 +30,13 @@ req.onerror = function() {
     console.log("Network Error");
 };
 
-var md=new showdown.Converter();
-md.setFlavor('github');
+/*var md=new showdown.Converter();
+md.setFlavor('github');*/
 // Make the request
 req.send();
 console.log(back);
-document.getElementById("content").innerHTML+=md.makeHtml(back);
+/*document.getElementById("content").innerHTML+=md.makeHtml(back);*/
+document.getElementById("content").innerHTML+=marked(back);
 </script>
 
 </body>
