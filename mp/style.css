@@ -1,7 +1,7 @@
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, iframe {
-  margin: 0;
-  padding: 0;
-  border: 0;
+body,iframe {
+  margin: 10px 50px 10px 50px;
+  padding: 5px;
+  border: 0px;
   vertical-align: baseline;
 }
 body {
@@ -16,15 +16,7 @@ a:link {color:#60C0A0;text-decoration:none;}		/* 未被访问的链接 */
 a:visited {color:#60C0A0;text-decoration:none;}	/* 已被访问的链接 */
 a:hover {color:#502050;text-decoration:none;}	/* 鼠标指针移动到链接上 */
 a:active {color:#502050;text-decoration:none;}	/* 正在被点击的链接 */
-button, input, select, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-}
-ul, ol {
-  list-style: none;
-}
+
 code {
   line-height:1.2;
   display: block;
@@ -37,4 +29,7 @@ code {
   magin: 5px;
 }
 h1,h2,h3,h4,h5,h6,p{
+  margin:0px;
+  padding:0px;
+  border:0px;
 }
