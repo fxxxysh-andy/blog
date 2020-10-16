@@ -1,0 +1,15 @@
+CACHE MANIFEST
+/index.html
+/mainblog.js
+/mainblog.css
+/all.json
+/index.appcache
+/mp/
+/nowifi.html
+
+#NETWORK:
+#/
+
+FALLBACK:
+/mp/ /nowifi.html
+/ /nowifi.html
