@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>javascript操作json</title>
-<link rel="fluid-icon" href="https://github.com/fluidicon.png" title="github">
+<link rel="fluid-icon" href="https://github.com/fluidicon.png">
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -17,7 +17,7 @@ req.open('GET','00000000.md',false);
 req.overrideMimeType("text/plain;charset=utf-8");//utf-8
 
 req.onload = function() {
-    if (req.status == 200&&req.readyState) {
+    if (req.status == 200&&req.readyState==4) {
       // do what you want, here, with the req.response
       // take a look at the object that gets returned, you may need
       // to call JSON.parse(), etc.
