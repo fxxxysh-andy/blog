@@ -12,7 +12,7 @@ var back;
 
 var req = new XMLHttpRequest();
 req.open('GET','00000000.md',false);
-req.overrideMimeType("text/plain;charset=utf-8");//默认为utf-8
+req.overrideMimeType("text/plain;charset=utf-8");//utf-8
 
 req.onload = function() {
     if (req.status == 200&&req.readyState) {
