@@ -1,7 +1,7 @@
-h1,h2,h3,h4,h5,h6,a
+h1,h2,h3,h4,h5,h6,a,p
 {
     text-align:center;
-    font-family:sans-serif;
+    font-family:KaiTi,sans-serif;
 }
 #head
 {
@@ -14,11 +14,11 @@ h1,h2,h3,h4,h5,h6,a
     top:10%;
     width:70%;
     /*height:40%;*/
-    padding:200px 100px 200px 100px;
+    padding:20px 100px 20px 100px;
     background-image:url('back.jpg');
     background-repeat:no-repeat;
     background-size:100% 100%;
-    border: 2px solid #c73;
+    border: 5px solid #bb7654;
     border-radius: 15px;
     margin: 0% 0% 10% 0%;
 }
@@ -27,4 +27,8 @@ h1,h2,h3,h4,h5,h6,a
     position: -webkit-sticky;
     position: sticky;
     top: 30px;
+}
+.cu
+{
+    font-weight: 900;
 }
